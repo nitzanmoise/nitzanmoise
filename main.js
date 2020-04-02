@@ -1,10 +1,10 @@
 
 const getFirsData = async () => {
-    // get users list
+    // get postss list
     const response = await fetch('http://nitzanmoise.com/t7-portfolio/wp-json/wp/v2/posts')
     // parse JSON
     const posts = await response.json()
-    // pick first user
+    // activate render function with posts list
     console.log(posts);
     renderPosts(posts)
 
